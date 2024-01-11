@@ -1,0 +1,44 @@
+// 这个文件专门用于修改Element-plus组件库内部的样式
+
+// 修改方式1: 使用 :deep() 或者 :global() 包裹选择器
+// :global(.el-dialog__body) {
+//   height: 500px;
+//   overflow-y: auto;
+// }
+
+// 1.需要自定义一个类名空间
+// 2.先在浏览器里面调试样式
+// 3.把调试好的Element-plus组件类名放到1.中自定义的类名空间中
+// 4.在App.vue或者main.ts入口文件中中引入当前这个样式文件
+// 5.将类名空间的类名添加到要修改样式的组件的祖先组件上即可
+
+// tip: 若是将类名空间的类名设置到 App.vue 根组件的根元素上, 那么只需要添加一次类名,
+//      往后想要修改Element-plus组件样式时, 直接在该类名空间中添加要修改样式的选择器即可
+
+// 修改方式2: 自定义一个类名空间
+// 使该类名尽可能不会和别的类名重复
+// .m-choose-icon-dialog-body-height {
+//   .el-scrollbar__view {
+//     display: flex;
+//     align-items: center;
+//     flex-wrap: wrap;
+//     width: 100%;
+//   }
+
+//   .el-dialog__body {
+//     height: 500px;
+//     overflow-y: auto;
+//   }
+// }
+
+.list-tabs__item {
+  .el-tabs__nav {
+    display: flex;
+    width: 100%;
+  }
+
+  .el-tabs__item {
+    flex: 1;
+    text-align: center;
+  }
+}

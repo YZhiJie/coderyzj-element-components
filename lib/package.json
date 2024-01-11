@@ -1,0 +1,17 @@
+{
+  "name": "coderyzj-element-components",
+  "version": "1.0.4",
+  "main": "index.umd.cjs",
+  "module": "index.js",
+  "types": "index.d.ts",
+  "author": {
+    "name": "coderyzj"
+  },
+  "keywords": [
+    "element-plus",
+    "typescript",
+    "封装组件",
+    "二次封装",
+    "vue-components"
+  ]
+}
