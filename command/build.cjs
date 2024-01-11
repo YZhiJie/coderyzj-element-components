@@ -147,7 +147,7 @@ const createPackageJsonFileForComponentLib = (libName) => {
   const fileName = 'package.json'
   const fileContent = `{
   "name": "${require('kebab-case')(libName).replace(/^-/, '')}",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "main": "index.umd.cjs",
   "module": "index.js",
   "types": "index.d.ts",
